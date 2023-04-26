@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform shootpoint;
     [SerializeField] float bulletspeed;
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
