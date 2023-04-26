@@ -12,9 +12,9 @@ public class Damage : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnCollisionEnter()
+    void OnCollisionEnter(Collision collision)
     {
-        Healthscript healthscript = Collision.gameObject.GetComponent<Healthscript>();
+        Healthscript healthscript = collision.gameObject.GetComponent<Healthscript>();
         healthscript.TakeDamage(damage);
     }
 }
