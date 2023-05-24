@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
     }
-    private void OnCollisionEnter(Collision collision)
+    private void FixedUpdate()
     {
         if (Vector3.Distance(targetPlayer.position, transform.position) < 100000000000000)
         {
